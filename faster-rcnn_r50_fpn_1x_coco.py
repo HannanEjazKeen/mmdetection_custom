@@ -1,16 +1,16 @@
 _base_ = [
-    '../../_base_/models/faster-rcnn_r50_fpn.py',
-    '../../_base_/default_runtime.py'
+    '../_base_/models/faster-rcnn_r50_fpn.py',
+    '../_base_/default_runtime.py'
 ]
 
 # dataset settings
 dataset_type = 'CocoDataset'
-data_root = '/media/hannan/samsung/Dataset/UATD_Dataset/UATD_COCO/images/'
+data_root = '/home/hannan/Documents/gitlab/mmdetection/dataset/MODD2/MODD2_COCO/images/'
 img_scale = (640, 640)  # width, height
 classes = ('object')
 
 # training settings
-max_epochs = 10
+max_epochs = 100
 num_last_epochs = 2
 interval = 1
 

@@ -1,18 +1,19 @@
 _base_ = [
-    '../../_base_/schedules/schedule_1x.py', '../../_base_/default_runtime.py',
-    '../../yolox/yolox_tta.py'
+    '../_base_/schedules/schedule_1x.py', '../_base_/default_runtime.py',
+    '../yolox/yolox_tta.py'
 ]
 
 img_scale = (640, 640)  # width, height
+num_classes=1
 classes = ('object')
 
 # training settings
-max_epochs = 10
+max_epochs = 100
 num_last_epochs = 2
 interval = 1
 
 # dataset settings
-data_root = '/media/hannan/samsung/Dataset/UATD_Dataset/UATD_COCO/images/'
+data_root = '/home/hannan/Documents/gitlab/mmdetection/dataset/MODD2/MODD2_COCO/images/'
 dataset_type = 'CocoDataset'
 
 # model settings
@@ -49,7 +50,7 @@ model = dict(
         act_cfg=dict(type='Swish')),
     bbox_head=dict(
         type='YOLOXHead',
-        num_classes=1,
+        num_classes=num_classes,
         in_channels=128,
         feat_channels=128,
         stacked_convs=2,
