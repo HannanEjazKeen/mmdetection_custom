@@ -86,3 +86,4 @@ If tensorboard is not added then following commands can help in ploting the resu
 ```bash
 python tools/analysis_tools/analyze_logs.py xxx.json [--keys ${KEYS}] [--legend ${LEGEND}] [--backend ${BACKEND}] [--style ${STYLE}] [--out ${OUT_FILE}]
 ```
+More information for plotting at https://mmsegmentation.readthedocs.io/en/latest/user_guides/useful_tools.html?highlight=plot#plot-training-logs
