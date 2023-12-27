@@ -80,6 +80,9 @@ Now run the command on terminal,
 ```bash
 tensorboard --logdir work_dirs/yolox_l_8xb8-300e_coco_uatd/ --host=localhost --port=8080
 ```
-
 finally, run http://localhost:8080 in chrome.
 
+If tensorboard is not added then following commands can help in ploting the result from json files in work_dir
+```bash
+python tools/analysis_tools/analyze_logs.py xxx.json [--keys ${KEYS}] [--legend ${LEGEND}] [--backend ${BACKEND}] [--style ${STYLE}] [--out ${OUT_FILE}]
+```
