@@ -87,3 +87,5 @@ If tensorboard is not added then following commands can help in ploting the resu
 python tools/analysis_tools/analyze_logs.py xxx.json [--keys ${KEYS}] [--legend ${LEGEND}] [--backend ${BACKEND}] [--style ${STYLE}] [--out ${OUT_FILE}]
 ```
 More information for plotting at https://mmsegmentation.readthedocs.io/en/latest/user_guides/useful_tools.html?highlight=plot#plot-training-logs
+
+https://github.com/open-mmlab/mmdetection/blob/b9fe21679f0cfa855fc5cb5ca12a1edf1f6d7b34/docs/en/robustness_benchmarking.md
