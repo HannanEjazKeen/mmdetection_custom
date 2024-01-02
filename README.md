@@ -89,3 +89,13 @@ python tools/analysis_tools/analyze_logs.py xxx.json [--keys ${KEYS}] [--legend 
 More information for plotting at https://mmsegmentation.readthedocs.io/en/latest/user_guides/useful_tools.html?highlight=plot#plot-training-logs
 
 https://github.com/open-mmlab/mmdetection/blob/b9fe21679f0cfa855fc5cb5ca12a1edf1f6d7b34/docs/en/robustness_benchmarking.md
+
+
+
+
+
+
+To compare to json logs
+```bash
+python tools/analysis_tools/analyze_logs.py plot_curve log1.json log2.json --keys bbox_mAP --legend run1 run2
+```
