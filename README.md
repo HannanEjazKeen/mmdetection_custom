@@ -95,7 +95,7 @@ https://github.com/open-mmlab/mmdetection/blob/b9fe21679f0cfa855fc5cb5ca12a1edf1
 
 
 
-To compare to json logs
+To compare two json logs
 ```bash
 python tools/analysis_tools/analyze_logs.py plot_curve log1.json log2.json --keys bbox_mAP --legend run1 run2
 ```
